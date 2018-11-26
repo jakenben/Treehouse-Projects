@@ -15,6 +15,7 @@ public class Main extends Application {
         Font.loadFont(getClass().getResource("/fonts/VarelaRound-Regular.ttf").toExternalForm(), 10);
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/home.fxml"));
         primaryStage.setScene(new Scene(root, 500, 500));
+        primaryStage.setTitle("Pomodoro Timer");
         primaryStage.setResizable(false);
         primaryStage.show();
     }

@@ -13,8 +13,17 @@ public class Attempt {
         mRemainingSeconds--;
     }
 
+    @Override
+    public String toString() {
+        return "Attempt{" +
+                "mMessage='" + mMessage + '\'' +
+                ", mRemainingSeconds=" + mRemainingSeconds +
+                ", mKind=" + mKind +
+                '}';
+    }
+
     public void save() {
-        System.out.printf("Saving: %s %n");
+        System.out.printf("Saving: %s %n", this);
     }
 
     public enum AttemptKind {
