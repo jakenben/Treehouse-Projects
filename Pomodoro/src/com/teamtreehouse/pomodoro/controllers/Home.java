@@ -112,9 +112,9 @@ public class Home {
         if(mCurrentAttempt == null) {
             handleRestart(actionEvent);
         } else {
-
+            playTimer();
         }
-        playTimer();
+
     }
 
     public void handlePause(ActionEvent actionEvent) {
